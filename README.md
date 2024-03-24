@@ -41,24 +41,37 @@ bun dev
 ```
 
 ## Screenshot
-[Login](https://github.com/ChanraSB/next-HireJob/assets/151555550/98b4c7e5-84ad-45bc-abf6-4fc53ed7cdf7) <br>
-[register](https://github.com/ChanraSB/next-HireJob/assets/151555550/71b0a580-509e-48d2-825c-b5f1bd9b9d81) <br>
-[landing page](https://github.com/ChanraSB/next-HireJob/assets/151555550/469954b0-29e0-4a3a-8bbe-7ca16ec58e3b) <br>
-[Worker Profile](https://github.com/ChanraSB/next-HireJob/assets/151555550/35237781-42a5-4fa4-9065-6f37522e595b) <br>
-[home](https://github.com/ChanraSB/next-HireJob/assets/151555550/73d51cd0-1be9-4d76-97ba-6a9129a5c3cb) <br>
-[editProfile](https://github.com/ChanraSB/next-HireJob/assets/151555550/9b895716-cb5d-4a59-8f32-cda2783a1e3e) <br>
-[addportfolio](https://github.com/ChanraSB/next-HireJob/assets/151555550/0d6c5225-0533-47b1-bef2-0dac4331c877) <br>
-![Detail Worker (2)](https://github.com/ChanraSB/next-HireJob/assets/151555550/88f08908-5394-4acf-931f-0aa0efd7ca42)
-![Edit Profile Worker](https://github.com/ChanraSB/next-HireJob/assets/151555550/775f3227-95cd-429a-abc8-41cd4ca02818)
-![Add Portfolio](https://github.com/ChanraSB/next-HireJob/assets/151555550/7396f5e3-06a4-4f5f-8718-fbbda697cca4)
-![Login (4)](https://github.com/ChanraSB/next-HireJob/assets/151555550/3323f12b-1776-41eb-8433-9154e8ff7df7)
-![Profile (3)](https://github.com/ChanraSB/next-HireJob/assets/151555550/514062c0-261d-4b06-a413-cfdc3529b62c)
-![Register Recruiter (2)](https://github.com/ChanraSB/next-HireJob/assets/151555550/d7a10c6b-7e46-4206-96fd-f9aca3570a0b)
-![register Worker](https://github.com/ChanraSB/next-HireJob/assets/151555550/eafe1574-da6f-442c-a51b-88a7da0159f4)
-![Detail Worker(Recruiter POV)](https://github.com/ChanraSB/next-HireJob/assets/151555550/6c43c52a-993f-47d8-b716-fcdedc1cea10)
-![Recruiter Profile](https://github.com/ChanraSB/next-HireJob/assets/151555550/ee6358bb-7eee-418c-a963-4d95a4a54023)
-![Edit Recruiter Profile](https://github.com/ChanraSB/next-HireJob/assets/151555550/912797b7-1114-46d5-bdc9-37f4cf9a72f5)
-![Hire](https://github.com/ChanraSB/next-HireJob/assets/151555550/a954073c-93d8-4350-91ad-e88e8426942b)
+### Customer
+|Login Page|Register Page|
+|------------|---------------|
+|![Login](https://github.com/ChanraSB/next-HireJob/assets/151555550/98b4c7e5-84ad-45bc-abf6-4fc53ed7cdf7)|![register](https://github.com/ChanraSB/next-HireJob/assets/151555550/71b0a580-509e-48d2-825c-b5f1bd9b9d81)|
+
+|Landing Page|Home Page|
+|------------|-------------|
+|![landing page](https://github.com/ChanraSB/next-HireJob/assets/151555550/469954b0-29e0-4a3a-8bbe-7ca16ec58e3b)|![Home page](https://github.com/ChanraSB/next-HireJob/assets/151555550/9941cf07-6ecb-4a16-be45-6d386d080388)|
+
+|Detail Worker Page|Profile Page| 
+|------------|-------------|
+|![Detail Worker (2)](https://github.com/ChanraSB/next-HireJob/assets/151555550/88f08908-5394-4acf-931f-0aa0efd7ca42)|![Profile (3)](https://github.com/ChanraSB/next-HireJob/assets/151555550/514062c0-261d-4b06-a413-cfdc3529b62c)|
+
+|Add Portfolio Page|Edit Profile Page| 
+|------------|-------------|
+|![Add Portfolio](https://github.com/ChanraSB/next-HireJob/assets/151555550/7396f5e3-06a4-4f5f-8718-fbbda697cca4)|![Edit Profile Worker](https://github.com/ChanraSB/next-HireJob/assets/151555550/775f3227-95cd-429a-abc8-41cd4ca02818)|
+
+### Recruiter
+|Register Page| Login Page| 
+|------------|-------------|
+|![Register Recruiter (2)](https://github.com/ChanraSB/next-HireJob/assets/151555550/d7a10c6b-7e46-4206-96fd-f9aca3570a0b) | ![Login (4)](https://github.com/ChanraSB/next-HireJob/assets/151555550/3323f12b-1776-41eb-8433-9154e8ff7df7) |
+
+|Detail Worker Page|Hire Page| 
+|------------|-------------|
+|![Detail Worker(Recruiter POV)](https://github.com/ChanraSB/next-HireJob/assets/151555550/6c43c52a-993f-47d8-b716-fcdedc1cea10) | ![Hire](https://github.com/ChanraSB/next-HireJob/assets/151555550/a954073c-93d8-4350-91ad-e88e8426942b) |
+
+|Profile Page|Edit Profile Page| 
+|------------|-------------|
+|![Recruiter Profile](https://github.com/ChanraSB/next-HireJob/assets/151555550/ee6358bb-7eee-418c-a963-4d95a4a54023) | ![Edit Recruiter Profile](https://github.com/ChanraSB/next-HireJob/assets/151555550/912797b7-1114-46d5-bdc9-37f4cf9a72f5) |
+
+
 ## Author
 💻 [Chanra S Bakkara](https://github.com/ChanraSB)
 
