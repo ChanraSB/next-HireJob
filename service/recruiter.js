@@ -23,7 +23,7 @@ export const getRecruitersProfile = async () => {
         ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
       },
       credentials: "include",
-      cache : "no-cache"
+      cache : "no-store"
     });
 
     if (!response.ok) {

@@ -1,4 +1,4 @@
-"use server"
+
 import WorkerProfile from "@/component/module/workerProfile/workerProfileCheck";
 import { getSkillById, getWorkersById, getPortfolioById, roleCheck } from "@/service/worker";
 import React from "react";

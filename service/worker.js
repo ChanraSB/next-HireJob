@@ -1,17 +1,17 @@
 const url = process.env.NEXT_PUBLIC_HIRE_JOB_URL;
 import { cookies } from "next/headers";
 
-// const getCookie = async (name) => {
-//   return cookies().get(name)?.value ?? "";
-// };
 const getCookie = async (name) => {
-  const cookieData = cookies().get(name)?.value ?? "";
-  return new Promise((resolve) =>
-    setTimeout(() => {
-      resolve(cookieData);
-    }, 1000)
-  );
+  return cookies().get(name)?.value ?? "";
 };
+// const getCookie = async (name) => {
+//   const cookieData = cookies().get(name)?.value ?? "";
+//   return new Promise((resolve) =>
+//     setTimeout(() => {
+//       resolve(cookieData);
+//     }, 1000)
+//   );
+// };
 
 
 export const getWorkersSkills = async () => {
@@ -23,7 +23,7 @@ export const getWorkersSkills = async () => {
         ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
       },
       credentials: "include",
-      cache : "no-cache"
+      cache : "no-store"
      
     });
     const data = await response.json();
@@ -35,14 +35,14 @@ export const getWorkersSkills = async () => {
 };
 export const getSkillById = async (slug) => {
   try {
-    const token = await getCookie("token");
+    // const token = await getCookie("token");
     const response = await fetch(`${url}/v1/skills/${slug}`, {
       headers: {
         "Content-Type": "application/json",
-        ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
+        // ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
       },
       credentials: "include",
-      cache : "no-cache"
+      cache : "no-store"
     
     });
     const data = await response.json();
@@ -63,7 +63,7 @@ export const getProfile = async () => {
         ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
       },
       credentials: "include",
-      cache : "no-cache"
+      cache : "no-store"
       
     });
 
@@ -79,14 +79,15 @@ export const getProfile = async () => {
 };
 export const getWorkersById = async (slug) => {
   try {
-    const token = await getCookie("token");
+    // const token = await getCookie("token");
     const response = await fetch(`${url}/v1/workers/${slug}`, {
       headers: {
         "Content-Type": "application/json",
-        ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
+        // "Cookie": `token=${token};path=/;expires=Session`
+        // ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
       },
       credentials: "include",
-      cache : "no-cache"
+      cache : "no-store"
       
     });
     if (!response.ok) {
@@ -101,14 +102,14 @@ export const getWorkersById = async (slug) => {
 };
 export const getPortfolioById = async (slug) => {
   try {
-    const token = await getCookie("token");
+    // const token = await getCookie("token");
     const response = await fetch(`${url}/v1/portfolio/${slug}`, {
       headers: {
         "Content-Type": "application/json",
-        ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
+      //   ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
       },
       credentials: "include",
-      cache : "no-cache"
+      cache : "no-store"
     });
     if (!response.ok) {
       throw new Error("Failed to fetch workers portfolio data");
@@ -126,10 +127,11 @@ export const roleCheck = async () => {
     const response = await fetch(`${url}/v1/auth/check-role`, {
       headers: {
         "Content-Type": "application/json",
-        ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
+        "Cookie": `token=${token};path=/;expires=Session`
+        // ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
       },
       credentials: "include",
-      cache : "no-cache"
+      cache : "no-store"
     });
     if (!response.ok) {
       throw new Error("Failed to fetch role data");

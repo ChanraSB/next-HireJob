@@ -1,17 +1,17 @@
 const url = process.env.NEXT_PUBLIC_HIRE_JOB_URL;
 import { cookies } from "next/headers";
 
-// const getCookie = async (name) => {
-//   return cookies().get(name)?.value ?? "";
-// };
 const getCookie = async (name) => {
-    const cookieData = cookies().get(name)?.value ?? "";
-    return new Promise((resolve) =>
-      setTimeout(() => {
-        resolve(cookieData);
-      }, 1000)
-    );
-  };
+  return cookies().get(name)?.value ?? "";
+};
+// const getCookie = async (name) => {
+//     const cookieData = cookies().get(name)?.value ?? "";
+//     return new Promise((resolve) =>
+//       setTimeout(() => {
+//         resolve(cookieData);
+//       }, 1000)
+//     );
+//   };
 export const getRecruitersNotification = async () => {
     try {
       const token = await getCookie("token");
@@ -22,7 +22,7 @@ export const getRecruitersNotification = async () => {
           ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
         },
         credentials: "include",
-        cache : "no-cache"
+        cache : "no-store"
       });
   
       if (!response.ok) {
@@ -45,7 +45,7 @@ export const getWorkersNotification = async () => {
           ...(token ? { Cookie: `token=${token};path=/;expires=Session` } : {}),
         },
         credentials: "include",
-        cache : "no-cache"
+        cache : "no-store"
       });
   
       if (!response.ok) {
