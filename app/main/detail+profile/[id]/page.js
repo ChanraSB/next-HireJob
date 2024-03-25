@@ -8,7 +8,7 @@ import { getSkillsWorkers, getWorkerById } from "@/service/workerClient";
 
 const DetailProfile = ({ params }) => {
   const id = params.id;
-  const [profileData, setProfileData] = useState(null);
+  const [profileData, setProfileData] = useState({});
   const [skillsData, setSkillsData] = useState([]);
 
   useEffect(() => {

@@ -6,7 +6,7 @@ import HireForm from '@/component/module/form/formHire';
 import { getWorkerById, getSkillsWorkers } from '@/service/workerClient';
 const Hire =  ({params}) => {
   const id = params.id;
-  const [profileData, setProfileData] = useState(null);
+  const [profileData, setProfileData] = useState({});
   const [skillsData, setSkillsData] = useState([]);
 
   useEffect(() => {
