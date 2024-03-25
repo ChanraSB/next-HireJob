@@ -117,7 +117,7 @@ const SearchBar = () => {
           <Card key={item.id} name={item.name} src={item.photo} job={item.job_desk || "-"} address={item.domicile || "-"}>
             {/* Card content */}
             <div className="col-sm-3 col-md-4 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center">
-              <Link href={`/main/detail+profile/${item?.id}`}>
+              <Link href={`/main/detail/${item?.id}`}>
       <Button child="Lihat Profile" style={{ background: "#5E50A1", color: "white" }} />
       </Link>
     </div>

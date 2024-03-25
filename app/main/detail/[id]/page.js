@@ -86,21 +86,3 @@ const DetailProfile = ({ params }) => {
 };
 
 export default DetailProfile;
-// export async function getStaticPaths() {
-//   const paths = await getAllWorkerIds(); // Mengambil semua slug yang mungkin
-//   return {
-//     paths,
-//     fallback: false // Ubah menjadi true jika ingin memberikan 404 jika slug tidak ditemukan
-//   };
-// }
-
-// // Mengimplementasikan getStaticProps
-// export async function getStaticProps({ params }) {
-//   const slug = params.slug;
-//   const profileData = await getWorkersById(slug); // Mengambil data profil berdasarkan slug
-//   return {
-//     props: {
-//       profileData
-//     }
-//   };
-// }
