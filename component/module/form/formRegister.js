@@ -18,7 +18,7 @@ const TabContainer = () => {
           Pekerja
         </TabButton>
         <TabButton isActive={tab === "perekrut"} onClick={() => selectTab("perekrut")}>
-          perekrut
+          Perekrut
         </TabButton>
       </div>
       {tab === "pekerja" && <FormregisterWorker />}
