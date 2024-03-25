@@ -47,6 +47,7 @@ export const getWorkerById = async (id) => {
         "Content-Type": "application/json",
       },
       credentials: "include",
+      cache : "no-store"
     });
     const data = await response.json();
     console.log( "worker", data.data)
