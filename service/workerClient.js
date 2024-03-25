@@ -39,9 +39,41 @@ export const getProfileWorkers = async () => {
     return Promise.reject(error.message || "terjadi error!");
   }
 };
-export const getSkillsWorkers = async () => {
+export const getWorkerById = async (id) => {
   try {
-    const response = await fetch("/v1/skills", {
+    const response = await fetch(`/v1/workers/${id}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    });
+    const data = await response.json();
+    console.log( "worker", data.data)
+    return data.data;
+  } catch (error) {
+    return Promise.reject(error.message || "terjadi error!");
+  }
+};
+export const getSkillById = async (id) => {
+  try {
+    const response = await fetch(`/v1/skills/${id}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    });
+    const data = await response.json();
+    console.log( "worker", data.data)
+    return data.data;
+  } catch (error) {
+    return Promise.reject(error.message || "terjadi error!");
+  }
+};
+export const getSkillsWorkers = async (id) => {
+  try {
+    const response = await fetch(`/v1/skills/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

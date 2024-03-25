@@ -1,11 +1,34 @@
-import React from 'react'
-import { getSkillById, getWorkersById,  } from "@/service/worker";
+"use client"
+import React, {useState, useEffect}from 'react'
+
 import { FaUser } from "react-icons/fa";
 import HireForm from '@/component/module/form/formHire';
-const Hire = async ({params}) => {
-    const slug = params.slug
-    const profileData = await getWorkersById(slug);
-  const skillsData = await getSkillById(slug)
+import { getWorkerById, getSkillsWorkers } from '@/service/workerClient';
+const Hire =  ({params}) => {
+  const id = params.id;
+  const [profileData, setProfileData] = useState(null);
+  const [skillsData, setSkillsData] = useState([]);
+
+  useEffect(() => {
+    getWorkerById(id)
+      .then(worker => {
+        setProfileData(worker);
+      })
+      .catch(error => {
+        console.error("Error fetching worker:", error);
+      });
+  }, [id]);
+
+  useEffect(() => {
+    getSkillsWorkers(id)
+      .then(skills => {
+        setSkillsData(skills);
+      })
+      .catch(error => {
+        console.error("Error fetching skills:", error);
+      });
+  }, [id]);
+
   return (
     <div style={{ marginTop: "60px", position: "relative" }}>
       <div
@@ -54,9 +77,9 @@ const Hire = async ({params}) => {
             className="col-sm-12 col-md-12 col-lg-8 col-xl-8  pt-4 px-4"
             style={{ borderRadius: "10px", background: "white" }}
           >
-            <h3 style={{ color: "#1F2A36" }}>Hubungi {profileData.name}</h3>
-            <p className='mt-4'>Jangan ragu untuk menghubungi {profileData.name} hari ini untuk memulai percakapan yang mengarah ke kesuksesan bersama!</p>
-          <HireForm id={slug}/>
+            <h3 style={{ color: "#1F2A36" }}>Hubungi {profileData?.name}</h3>
+            <p className='mt-4'>Jangan ragu untuk menghubungi {profileData?.name} hari ini untuk memulai percakapan yang mengarah ke kesuksesan bersama!</p>
+          <HireForm id={id}/>
           </div>
         </div>
       </div>
