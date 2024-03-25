@@ -6,11 +6,11 @@ import { FaUser } from "react-icons/fa";
 import Button from "@/component/base/button/button";
 import Link from "next/link";
 const DetailProfile = async ({ params }) => {
-  const slug = params.slug;
-  console.log(slug);
+  const id = params.id;
+  console.log(id);
   const role = await roleCheck();
-  const profileData = await getWorkersById(slug);
-  const skillsData = await getSkillById(slug)
+  const profileData = await getWorkersById(id);
+  const skillsData = await getSkillById(id)
   
   return (
     <div style={{ marginTop: "60px", position: "relative" }}>
@@ -68,7 +68,7 @@ const DetailProfile = async ({ params }) => {
             className="col-sm-12 col-md-12 col-lg-8 col-xl-8  pt-4 px-4"
             style={{ borderRadius: "10px", background: "white" }}
           >
-            <WorkerProfile id={slug}/>
+            <WorkerProfile id={id}/>
           </div>
         </div>
       </div>
