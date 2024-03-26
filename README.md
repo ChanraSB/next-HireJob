@@ -41,10 +41,10 @@ bun dev
 ```
 
 ## Screenshot
-### Customer
-|Login Page|Register Page|
+### Worker
+|Register Page|Login Page |
 |------------|---------------|
-|![Login](https://github.com/ChanraSB/next-HireJob/assets/151555550/98b4c7e5-84ad-45bc-abf6-4fc53ed7cdf7)|![register](https://github.com/ChanraSB/next-HireJob/assets/151555550/71b0a580-509e-48d2-825c-b5f1bd9b9d81)|
+| ![Register Page ](https://github.com/ChanraSB/next-HireJob/assets/151555550/5f3aed66-7318-45c3-b947-836d06049926)| ![Login](https://github.com/ChanraSB/next-HireJob/assets/151555550/98b4c7e5-84ad-45bc-abf6-4fc53ed7cdf7)|
 
 |Landing Page|Home Page|
 |------------|-------------|
@@ -61,7 +61,7 @@ bun dev
 ### Recruiter
 |Register Page| Login Page| 
 |------------|-------------|
-|![Register Recruiter (2)](https://github.com/ChanraSB/next-HireJob/assets/151555550/d7a10c6b-7e46-4206-96fd-f9aca3570a0b) | ![Login (4)](https://github.com/ChanraSB/next-HireJob/assets/151555550/3323f12b-1776-41eb-8433-9154e8ff7df7) |
+|![Register Page](https://github.com/ChanraSB/next-HireJob/assets/151555550/e2e3fb53-d376-44f4-9797-a1ee6e9db49d) | ![Login (4)](https://github.com/ChanraSB/next-HireJob/assets/151555550/3323f12b-1776-41eb-8433-9154e8ff7df7) |
 
 |Detail Worker Page|Hire Page| 
 |------------|-------------|
@@ -70,6 +70,7 @@ bun dev
 |Profile Page|Edit Profile Page| 
 |------------|-------------|
 |![Recruiter Profile](https://github.com/ChanraSB/next-HireJob/assets/151555550/ee6358bb-7eee-418c-a963-4d95a4a54023) | ![Edit Recruiter Profile](https://github.com/ChanraSB/next-HireJob/assets/151555550/912797b7-1114-46d5-bdc9-37f4cf9a72f5) |
+
 
 
 ## Author
