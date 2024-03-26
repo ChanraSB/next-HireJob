@@ -101,16 +101,16 @@ const CardEditProfile = () => {
         Edit
       </div>
       <div className="card-body">
-        <h4 className="card-title ">
+        <h4 className="card-title " style={{color : "#1F2A36",  fontWeight : "bolder"}}>
           {profileData ? profileData.name || "-" : "-"}
         </h4>
-        <p className="card-subtitle text-secondary">
+        <p className="card-subtitle text-secondary" style={{color : "#1F2A36",  fontWeight : "bold"}}>
           {profileData ? profileData.job_desk || "-" : "-"}
         </p>
-        <p className="card-subtitle text-secondary">
+        <p className="card-subtitle text-secondary mt-2">
           {profileData ? profileData.domicile || "-" : "-"}
         </p>
-        <p className="card-subtitle text-secondary">
+        <p className="card-subtitle text-secondary mt-2">
           {profileData ? profileData.workplace || "-" : "-"}
         </p>
         

@@ -14,7 +14,7 @@ const WorkerProfile = (props) => {
 
   return (
     <div>
-      <div className=" d-flex justify-content-start g-4 align-items-center">
+      <div className=" d-flex justify-content-start g-4 align-items-center mb-4">
         <TabButton isActive={tab === "portfolio"} onClick={() => selectTab("portfolio")}>
           Portofolio
         </TabButton>
@@ -23,7 +23,7 @@ const WorkerProfile = (props) => {
         </TabButton>
       </div>
       {tab === "portfolio" && <Portofolio id={id} />}
-      {tab === "experience" && <Experience />}
+      {tab === "experience" && <Experience id={id}/>}
     </div>
   );
 };

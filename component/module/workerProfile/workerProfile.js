@@ -13,7 +13,7 @@ const WorkerProfile = () => {
 
   return (
     <div>
-      <div className=" d-flex justify-content-start g-4 align-items-center">
+      <div className=" d-flex justify-content-start g-4 align-items-center mb-4">
         <TabButton isActive={tab === "portfolio"} onClick={() => selectTab("portfolio")}>
           Portofolio
         </TabButton>

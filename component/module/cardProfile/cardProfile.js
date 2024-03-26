@@ -21,10 +21,10 @@ const CardProfile = (props) => {
         {src ? <img src={src} className="card-img " style={{ width: "100%", height: "100%", objectFit : "cover", borderRadius : "50%" }} /> : <FaUser className="card-img " style={{ width: "100%", height: "auto", borderRadius: "50%", color: "#9EA0A5" }} />}
       </div>
       <div className="card-body">
-        <h4 className="card-title ">{name}</h4>
-        <p className="card-subtitle text-secondary">{job}</p>
-        <p className="card-subtitle text-secondary">{address}</p>
-        <p className="card-subtitle text-secondary">{workPlace}</p>
+        <h4 className="card-title " style={{color : "#1F2A36",  fontWeight : "bolder"}}>{name}</h4>
+        <p className="card-subtitle " style={{color : "#1F2A36",  fontWeight : "bold"}}>{job}</p>
+        <p className="card-subtitle text-secondary mt-2" >{address}</p>
+        <p className="card-subtitle text-secondary mt-2">{workPlace}</p>
         <p className="card-text text-secondary mt-2">{description}</p>
         <Button
           child={child}
@@ -35,10 +35,10 @@ const CardProfile = (props) => {
         />
         <h4 className="mt-3">Skill</h4>
         {children}
-        <ul className="nav  mt-3 mb-3 d-block">
+        {/* <ul className="nav  mt-3 mb-3 d-block">
           <li className="nav-item ">
             <Link className="nav-link text-secondary" href="#">
-              <MdOutlineEmail /> chanrasbakkara@gmail.com
+              <MdOutlineEmail /> chanras@gmail.com
             </Link>
           </li>
           <li className="nav-item">
@@ -56,7 +56,7 @@ const CardProfile = (props) => {
               <LuGitlab /> @ChanraSB
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );

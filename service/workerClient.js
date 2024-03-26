@@ -72,6 +72,22 @@ export const getSkillById = async (id) => {
     return Promise.reject(error.message || "terjadi error!");
   }
 };
+export const getExperienceById = async (id) => {
+  try {
+    const response = await fetch(`/v1/experience/${id}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+    });
+    const data = await response.json();
+    console.log( "worker", data.data)
+    return data.data;
+  } catch (error) {
+    return Promise.reject(error.message || "terjadi error!");
+  }
+};
 export const getSkillsWorkers = async (id) => {
   try {
     const response = await fetch(`/v1/skills/${id}`, {

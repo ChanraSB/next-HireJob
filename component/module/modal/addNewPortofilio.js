@@ -1,15 +1,15 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "@/component/base/button/button";
 import Input from "@/component/base/input/input";
 
 import { MdCloudUpload } from "react-icons/md";
-import { addPortfolio } from "@/service/portfolio";
+import { addPortfolio, getPortfolio } from "@/service/portfolio";
 import { addAsset } from "@/service/asset";
 
 const AddNewPortofilio = (props) => {
-  const { show, onHide } = props;
+  const { show, onHide, onGetPortfolio } = props;
   const [image, setImage] = useState(null);
   const [saveImage, setSaveImage] = useState("");
   const [values, setValues] = useState({
@@ -30,7 +30,7 @@ const AddNewPortofilio = (props) => {
       [e.target.name]: e.target.value,
     }));
   };
-
+ 
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
@@ -42,7 +42,9 @@ const AddNewPortofilio = (props) => {
         ...values,
         image: asset,
       });
+      onGetPortfolio()
       onHide();
+      
     } catch (error) {
       console.error(error);
     }

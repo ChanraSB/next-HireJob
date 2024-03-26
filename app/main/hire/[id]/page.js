@@ -51,9 +51,9 @@ const Hire =  ({params}) => {
                   {profileData.photo ? <img src={profileData.photo} className="card-img " style={{ width: "100%", height: "100%", objectFit : "cover", borderRadius : "50%" }} /> : <FaUser className="card-img " style={{ width: "100%", height: "auto", borderRadius: "50%", color: "#9EA0A5" }} />}
                 </div>
                 <div className="card-body">
-                  <h4 className="card-title ">{profileData.name || "-"}</h4>
-                  <p className="card-subtitle text-secondary">{profileData.workplace || "-"}</p>
-                  <p className="card-subtitle text-secondary">{profileData.domicile || "-"}</p>
+                  <h4 className="card-title " style={{color : "#1F2A36",  fontWeight : "bolder"}}>{profileData.name || "-"}</h4>
+                  <p className="card-subtitle text-secondary" style={{color : "#1F2A36",  fontWeight : "bold"}}>{profileData.workplace || "-"}</p>
+                  <p className="card-subtitle text-secondary mt-2">{profileData.domicile || "-"}</p>
                   
                   <p className="card-text text-secondary mt-2">{profileData.description || "-"}</p>
                   

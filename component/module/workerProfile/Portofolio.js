@@ -14,6 +14,7 @@ const Portofolio = () => {
 
   const handleGetPortfolio = async () => {
     try {
+      
       const response = await getPortfolio();
       setPortfolio(response.data);
     } catch (error) {
@@ -44,10 +45,10 @@ const Portofolio = () => {
       ))}
 
       <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-        <div className="Card d-flex justify-content-center align-items-center" style={{ background: "#CFCFCF", height: "90%", cursor: "pointer" }} onClick={handleShow}>
+        <div className="Card d-flex justify-content-center align-items-center mb-4" style={{ background: "#CFCFCF", height: 200, cursor: "pointer" }} onClick={handleShow}>
           <MdOutlineAddToPhotos style={{ height: "100px", color: "gray" }} />
         </div>
-        <AddNewPortofilio show={show} onHide={handleClose} />
+        <AddNewPortofilio show={show} onHide={handleClose} onGetPortfolio={() => handleGetPortfolio()} />
       </div>
     </div>
   );

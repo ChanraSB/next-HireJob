@@ -1,6 +1,6 @@
 "use client";
 import React, {useEffect, useState} from "react";
-import Image from "next/image";
+
 import { FaUser } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
 import Button from "@/component/base/button/button";
