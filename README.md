@@ -41,10 +41,10 @@ bun dev
 ```
 
 ## Screenshot
-### Customer
-|Login Page|Register Page|
+### Worker
+|Register Page|Login Page |
 |------------|---------------|
-|![Login](https://github.com/ChanraSB/next-HireJob/assets/151555550/98b4c7e5-84ad-45bc-abf6-4fc53ed7cdf7)|![Register Page ](https://github.com/ChanraSB/next-HireJob/assets/151555550/5f3aed66-7318-45c3-b947-836d06049926)|
+| ![Register Page ](https://github.com/ChanraSB/next-HireJob/assets/151555550/5f3aed66-7318-45c3-b947-836d06049926)| ![Login](https://github.com/ChanraSB/next-HireJob/assets/151555550/98b4c7e5-84ad-45bc-abf6-4fc53ed7cdf7)|
 
 |Landing Page|Home Page|
 |------------|-------------|
