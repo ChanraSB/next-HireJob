@@ -18,7 +18,7 @@ const CardProfile = (props) => {
   return (
     <div className="card py-3" style={{ width: "80%", borderRadius: "10px" }}>
       <div className="card-img" style={{ boxSizing: "border-box", width: "100px", height: "100px", marginLeft: "auto", marginRight: "auto", borderRadius: "50%" }}>
-        {src ? <img src={src} className="card-img " style={{ width: "100%", height: "auto" }} /> : <FaUser className="card-img " style={{ width: "100%", height: "auto", borderRadius: "50%", color: "#9EA0A5" }} />}
+        {src ? <img src={src} className="card-img " style={{ width: "100%", height: "100%", objectFit : "cover", borderRadius : "50%" }} /> : <FaUser className="card-img " style={{ width: "100%", height: "auto", borderRadius: "50%", color: "#9EA0A5" }} />}
       </div>
       <div className="card-body">
         <h4 className="card-title ">{name}</h4>
